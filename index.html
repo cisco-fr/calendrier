@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cisco FY27 - Calendrier Annuel d'Enablement Partenaires</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cisco FY27 - Calendrier Annuel d'Enablement Partenaires</title>
+<style>
         :root {
             --cisco-blue: #049fd9;
             --cisco-blue-glow: rgba(4, 159, 217, 0.45);
@@ -561,443 +562,402 @@
     </style>
 </head>
 <body>
-
 <div class="container">
-    <!-- Header -->
-    <header>
-        <span class="tag-pill">📅 Cisco Partner Enablement • France & EMEA</span>
-        <h1>Synthèse Trimestrielle des Événements Partenaires</h1>
-        <p class="subtitle">Calendrier opérationnel FY27 (Août 2026 – Juillet 2027) : Sessions techniques, programmes stratégiques, comités de direction et grands rendez-vous annuels.</p>
-        
-        <div class="header-meta">
-            <span><strong>Année Fiscale :</strong> FY27</span>
-            <span><strong>Couverture :</strong> Q1 • Q2 • Q3 • Q4</span>
-            <span><strong>Cible :</strong> Partenaires Cisco France & Équipes Partenaires</span>
-            <span><strong>Source :</strong> Direction Partner Organization</span>
-        </div>
-    </header>
-
-    <!-- Controls & Legend -->
-    <div class="interactive-zone">
-        <!-- 1. Interactive Filter Toolbar -->
-        <div class="filter-panel">
-            <div class="panel-header">
-                <span class="panel-title">🎯 FILTRER L'AFFICHAGE :</span>
-                <span id="eventCount" class="event-counter">16 événements affichés</span>
-            </div>
-            <div class="filter-buttons-group">
-                <button class="filter-btn active" onclick="filterEvents('all', this)">✨ Tous</button>
-                <button class="filter-btn" onclick="filterEvents('tech', this)">⚙️ Profil technique</button>
-                <button class="filter-btn" onclick="filterEvents('commercial', this)">$ Profil commercial</button>
-                <button class="filter-btn" onclick="filterEvents('executive', this)">* Sur invitation</button>
-                <button class="filter-btn" onclick="filterEvents('flagship', this)">⭐ Événements phares</button>
-            </div>
-        </div>
-
-        <!-- 2. Informational Legend Guide -->
-        <div class="legend-panel">
-            <div class="legend-title">ℹ️ GUIDE DES SYMBOLES & BADGES :</div>
-            <div class="legend-items-list">
-                <div class="legend-item">
-                    <span class="legend-badge badge-star">⭐</span>
-                    <span><strong>Événements phares</strong> : Plénières majeures</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-badge badge-invitation">*</span>
-                    <span><strong>Sur invitation</strong> : Sessions exécutives</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-badge badge-commercial">$</span>
-                    <span><strong>Profil commercial</strong> : Sessions vente & business</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-badge badge-tech">⚙️</span>
-                    <span><strong>Profil technique</strong> : Sessions ingénierie & SE</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4 Quarters Grid -->
-    <div class="quarters-grid">
-        
-        <!-- Q1 FY27 -->
-        <div class="quarter-column" data-quarter="Q1">
-            <div class="quarter-header">
-                <span class="quarter-title">Q1 FY27</span>
-                <span class="quarter-dates">Août - Oct. 2026</span>
-            </div>
-            <div class="events-list">
-                
-                <!-- Event 1 -->
-                <div class="event-card executive featured" data-cat="executive flagship">
-                    <div class="event-top">
-                        <div class="event-name">Cisco Partner Executive Club</div>
-                        <div class="event-badges">
-                            <span class="badge badge-star" title="Événements phares">⭐</span>
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                        </div>
-                    </div>
-                    <div class="event-details">20 Septembre 2026</div>
-                    <div class="event-location">📍 Station F, Paris</div>
-                </div>
-
-                <!-- Event 2 -->
-                <div class="event-card executive commercial" data-cat="executive commercial">
-                    <div class="event-top">
-                        <div class="event-name">Building Profitable AI Practices (Bibap)</div>
-                        <div class="event-badges">
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">29 Sept. – 2 Octobre 2026</div>
-                    <div class="event-location">📍 Cisco France, Paris</div>
-                </div>
-
-                                <!-- Event: Agentic Ops & Résilience IA -->
-                <div class="event-card executive commercial tech" data-cat="executive commercial tech">
-                    <div class="event-top">
-                        <div class="event-name">Agentic Ops & Résilience IA : bâtir les opérations de demain</div>
-                        <div class="event-badges">
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                            <span class="badge badge-commercial" title="Direction commerciale">$</span>
-                            <span class="badge badge-tech" title="Direction technique">⚙️</span>
-                        </div>
-                    </div>
-                    <div class="event-details">7 Octobre 2026</div>
-                    <div class="event-location">📍 Station F, Paris</div>
-                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 5px; line-height: 1.3;">🎯 Cible : Direction commerciale et technique</div>
-                    <div style="margin-top: 8px;">
-                        <a href="https://registration.socio.events/e/ciscoaistationf" target="_blank" rel="noopener noreferrer" class="action-link" style="display: inline-flex; width: 100%; justify-content: center; box-sizing: border-box; background: rgba(0, 188, 235, 0.15); border-color: rgba(0, 188, 235, 0.4); color: #00BCEB;">
+<!-- Header -->
+<header>
+<span class="tag-pill">📅 Cisco Partner Enablement • France &amp; EMEA</span>
+<h1>Synthèse Trimestrielle des Événements Partenaires</h1>
+<p class="subtitle">Calendrier opérationnel FY27 (Août 2026 – Juillet 2027) : Sessions techniques, programmes stratégiques, comités de direction et grands rendez-vous annuels.</p>
+<div class="header-meta">
+<span><strong>Année Fiscale :</strong> FY27</span>
+<span><strong>Couverture :</strong> Q1 • Q2 • Q3 • Q4</span>
+<span><strong>Cible :</strong> Partenaires Cisco France &amp; Équipes Partenaires</span>
+<span><strong>Source :</strong> Direction Partner Organization</span>
+</div>
+</header>
+<!-- Controls & Legend -->
+<div class="interactive-zone">
+<!-- 1. Interactive Filter Toolbar -->
+<div class="filter-panel">
+<div class="panel-header">
+<span class="panel-title">🎯 FILTRER L'AFFICHAGE :</span>
+<span class="event-counter" id="eventCount">20 événements affichés</span>
+</div>
+<div class="filter-buttons-group">
+<button class="filter-btn active" onclick="filterEvents('all', this)">✨ Tous</button>
+<button class="filter-btn" onclick="filterEvents('tech', this)">⚙️ Profil technique</button>
+<button class="filter-btn" onclick="filterEvents('commercial', this)">$ Profil commercial</button>
+<button class="filter-btn" onclick="filterEvents('executive', this)">* Sur invitation</button>
+<button class="filter-btn" onclick="filterEvents('flagship', this)">⭐ Événements phares</button>
+</div>
+</div>
+<!-- 2. Informational Legend Guide -->
+<div class="legend-panel">
+<div class="legend-title">ℹ️ GUIDE DES SYMBOLES &amp; BADGES :</div>
+<div class="legend-items-list">
+<div class="legend-item">
+<span class="legend-badge badge-star">⭐</span>
+<span><strong>Événements phares</strong> : Plénières majeures</span>
+</div>
+<div class="legend-item">
+<span class="legend-badge badge-invitation">*</span>
+<span><strong>Sur invitation</strong> : Sessions exécutives</span>
+</div>
+<div class="legend-item">
+<span class="legend-badge badge-commercial">$</span>
+<span><strong>Profil commercial</strong> : Sessions vente &amp; business</span>
+</div>
+<div class="legend-item">
+<span class="legend-badge badge-tech">⚙️</span>
+<span><strong>Profil technique</strong> : Sessions ingénierie &amp; SE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Quarters Grid -->
+<div class="quarters-grid">
+<!-- Q1 FY27 -->
+<div class="quarter-column" data-quarter="Q1">
+<div class="quarter-header">
+<span class="quarter-title">Q1 FY27</span>
+<span class="quarter-dates">Août - Oct. 2026</span>
+</div>
+<div class="events-list">
+<!-- Event 1 -->
+<div class="event-card executive featured" data-cat="executive flagship">
+<div class="event-top">
+<div class="event-name">Cisco Partner Executive Club</div>
+<div class="event-badges">
+<span class="badge badge-star" title="Événements phares">⭐</span>
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+</div>
+</div>
+<div class="event-details">20 Septembre 2026</div>
+<div class="event-location">📍 Station F, Paris</div>
+</div>
+<!-- Event 2 -->
+<div class="event-card executive commercial" data-cat="executive commercial">
+<div class="event-top">
+<div class="event-name">Building Profitable AI Practices (Bibap)</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">29 Sept. – 2 Octobre 2026</div>
+<div class="event-location">📍 Cisco France, Paris</div>
+</div>
+<!-- Event: Agentic Ops & Résilience IA -->
+<div class="event-card executive commercial tech" data-cat="executive commercial tech">
+<div class="event-top">
+<div class="event-name">Agentic Ops &amp; Résilience IA : bâtir les opérations de demain</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-commercial" title="Direction commerciale">$</span>
+<span class="badge badge-tech" title="Direction technique">⚙️</span>
+</div>
+</div>
+<div class="event-details">7 Octobre 2026</div>
+<div class="event-location">📍 Station F, Paris</div>
+<div style="font-size: 0.75rem; color: #94a3b8; margin-top: 5px; line-height: 1.3;">🎯 Cible : Direction commerciale et technique</div>
+<div style="margin-top: 8px;">
+<a class="action-link" href="https://registration.socio.events/e/ciscoaistationf" rel="noopener noreferrer" style="display: inline-flex; width: 100%; justify-content: center; box-sizing: border-box; background: rgba(0, 188, 235, 0.15); border-color: rgba(0, 188, 235, 0.4); color: #00BCEB;" target="_blank">
                             ✍️ S'inscrire à l'événement
                         </a>
-                    </div>
-                </div>
-
-                <!-- Event 3 -->
-                <div class="event-card executive tech" data-cat="executive tech">
-                    <div class="event-top">
-                        <div class="event-name">Partner Defence Advisory Board</div>
-                        <div class="event-badges">
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                            <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                        </div>
-                    </div>
-                    <div class="event-details">13 - 14 Octobre 2026</div>
-                    <div class="event-location">📍 Cisco France, Paris</div>
-                </div>
-
-                <!-- Event 4 -->
-                <div class="event-card executive featured commercial" data-cat="executive flagship commercial">
-                    <div class="event-top">
-                        <div class="event-name">Cisco Partner Summit</div>
-                        <div class="event-badges">
-                            <span class="badge badge-star" title="Événements phares">⭐</span>
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">26 - 28 Octobre 2026</div>
-                    <div class="event-location">📍 Vancouver, Canada</div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Q2 FY27 -->
-        <div class="quarter-column" data-quarter="Q2">
-            <div class="quarter-header">
-                <span class="quarter-title">Q2 FY27</span>
-                <span class="quarter-dates">Nov. 2026 - Jan. 2027</span>
-            </div>
-            <div class="events-list">
-                <!-- Parcours adoption & cycle de vie du cas d'usage -->
-                <div class="event-card executive" data-cat="executive">
-                    <div class="event-top">
-                        <div class="event-name">Parcours adoption & cycle de vie du cas d'usage</div>
-                        <div class="event-badges">
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                        </div>
-                    </div>
-                    <div class="event-details">19 Novembre 2026</div>
-                    <div class="event-location">📍 Sur invitation • Paris & Hybride</div>
-                </div>
-
-                
-                <!-- Masters de l'hiver -->
-                <div class="event-card masters tech" data-cat="tech masters">
-                    <div class="event-top">
-                        <div class="event-name">Les Masters de l’Hiver (Technical Series)</div>
-                        <div class="event-badges">
-                            <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                        </div>
-                    </div>
-                    <div class="event-details">Paris & Régions</div>
-                    <div class="subtracks-box">
-                        <div class="subtrack-item">
-                            <span class="subtrack-name">🔒 Cyber security</span>
-                            <span class="subtrack-date">10/12/2026</span>
-                        </div>
-                        <div class="subtrack-item">
-                            <span class="subtrack-name">🌐 Secure Networking</span>
-                            <span class="subtrack-date">15/12/2026</span>
-                        </div>
-                        <div class="subtrack-item">
-                            <span class="subtrack-name">💬 Collaboration</span>
-                            <span class="subtrack-date">13/01/2027</span>
-                        </div>
-                        <div class="subtrack-item">
-                            <span class="subtrack-name">☁️ Cloud & AI</span>
-                            <span class="subtrack-date">Janvier 2027</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Managed Services -->
-                <div class="event-card" data-cat="partner-day">
-                    <div class="event-top">
-                        <div class="event-name">Managed Services Partner Day</div>
-                        <div class="event-badges"></div>
-                    </div>
-                    <div class="event-details">8 Décembre 2026</div>
-                    <div class="event-location">📍 Cisco France, Paris</div>
-                </div>
-
-                <!-- Coffee Roadshow -->
-                <div class="event-card commercial" data-cat="commercial">
-                    <div class="event-top">
-                        <div class="event-name">"Coffee, Collab & Customer Outcomes"</div>
-                        <div class="event-badges">
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">16 Décembre 2026</div>
-                    <div class="event-location">📍 Cisco France, Paris</div>
-                </div>
-
-                <!-- Grand Angle -->
-                <div class="event-card featured commercial" data-cat="flagship commercial">
-                    <div class="event-top">
-                        <div class="event-name">Cisco Grand Angle</div>
-                        <div class="event-badges">
-                            <span class="badge badge-star" title="Événements phares">⭐</span>
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">19 Janvier 2027</div>
-                    <div class="event-location">📍 Cisco France, Paris</div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Q3 FY27 -->
-        <div class="quarter-column" data-quarter="Q3">
-            <div class="quarter-header">
-                <span class="quarter-title">Q3 FY27</span>
-                <span class="quarter-dates">Fév. - Avril 2027</span>
-            </div>
-            <div class="events-list">
-                
-                <!-- CFO Day -->
-                <div class="event-card executive commercial" data-cat="executive commercial">
-                    <div class="event-top">
-                        <div class="event-name">CFO DAY</div>
-                        <div class="event-badges">
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">Date : TBC</div>
-                    <div class="event-location">📍 Lieu à confirmer</div>
-                </div>
-
-                <!-- Cisco Live EMEA -->
-                <div class="event-card featured tech commercial" data-cat="flagship tech commercial">
-                    <div class="event-top">
-                        <div class="event-name">Cisco Live EMEA</div>
-                        <div class="event-badges">
-                            <span class="badge badge-star" title="Événements phares">⭐</span>
-                            <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">8 - 12 Février 2027</div>
-                    <div class="event-location">📍 Londres, Royaume-Uni</div>
-                </div>
-
-                <!-- Masters Printemps -->
-                <div class="event-card masters tech" data-cat="tech masters">
-                    <div class="event-top">
-                        <div class="event-name">Les Masters du Printemps (Technical Series)</div>
-                        <div class="event-badges">
-                            <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                        </div>
-                    </div>
-                    <div class="event-details">Sessions Techniques Approfondies</div>
-                    <div class="subtracks-box">
-                        <div class="subtrack-item"><span class="subtrack-name">☁️ Cloud & AI</span><span class="subtrack-date">TBD</span></div>
-                        <div class="subtrack-item"><span class="subtrack-name">💬 Collaboration</span><span class="subtrack-date">TBD</span></div>
-                        <div class="subtrack-item"><span class="subtrack-name">🌐 Secure Networking</span><span class="subtrack-date">TBD</span></div>
-                        <div class="subtrack-item"><span class="subtrack-name">🔒 Cyber security</span><span class="subtrack-date">TBD</span></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Q4 FY27 -->
-        <div class="quarter-column" data-quarter="Q4">
-            <div class="quarter-header">
-                <span class="quarter-title">Q4 FY27</span>
-                <span class="quarter-dates">Mai - Juillet 2027</span>
-            </div>
-            <div class="events-list">
-                
-                <!-- Cisco Connect FR -->
-                <div class="event-card executive featured" data-cat="executive flagship tech commercial">
-                    <div class="event-top">
-                        <div class="event-name">Cisco Connect France</div>
-                        <div class="event-badges">
-                            <span class="badge badge-star" title="Événements phares">⭐</span>
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                            <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                        </div>
-                    </div>
-                    <div class="event-details">Date : TBC</div>
-                    <div class="event-location">📍 Paris</div>
-                </div>
-
-                <!-- HR Day -->
-                <div class="event-card" data-cat="general">
-                    <div class="event-top">
-                        <div class="event-name">HR Day</div>
-                    </div>
-                    <div class="event-details">Date : TBD</div>
-                    <div class="event-location">📍 Cisco Paris</div>
-                </div>
-
-                <!-- Cisco Live USA -->
-                <div class="event-card featured commercial tech" data-cat="flagship commercial tech">
-                    <div class="event-top">
-                        <div class="event-name">Cisco Live USA</div>
-                        <div class="event-badges">
-                            <span class="badge badge-star" title="Événements phares">⭐</span>
-                            <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">31 Mai – 4 Juin 2027</div>
-                    <div class="event-location">📍 Las Vegas, USA</div>
-                </div>
-
-                <!-- Marketing Exchange -->
-                <div class="event-card commercial" data-cat="marketing commercial">
-                    <div class="event-top">
-                        <div class="event-name">EMEA Partner Marketing Exchange</div>
-                        <div class="event-badges">
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">9 - 10 Juin 2027</div>
-                    <div class="event-location">📍 Madrid, Espagne</div>
-                </div>
-
-                <!-- POAB -->
-                <div class="event-card executive" data-cat="executive">
-                    <div class="event-top">
-                        <div class="event-name">Partner Operation Advisory Board (POAB)</div>
-                        <div class="event-badges">
-                            <span class="badge badge-invitation" title="Sur invitation">*</span>
-                        </div>
-                    </div>
-                    <div class="event-details">Date : TBD</div>
-                    <div class="event-location">📍 TBD</div>
-                </div>
-
-                <!-- One Cisco Sales Academy -->
-                <div class="event-card commercial" data-cat="commercial">
-                    <div class="event-top">
-                        <div class="event-name">One Cisco Sales Academy</div>
-                        <div class="event-badges">
-                            <span class="badge badge-commercial" title="Profil commercial">$</span>
-                        </div>
-                    </div>
-                    <div class="event-details">Date : TBD</div>
-                    <div class="event-location">📍 TBD</div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Recurring Sessions & Enablement Hub -->
-    <div class="recurring-section">
-        <div class="recurring-header">
-            <h2>🔄 Rendez-vous Récurrents & Plateformes d'Enablement Partenaires</h2>
-        </div>
-        <div class="recurring-grid">
-            
-            <div class="recurring-card">
-                <div class="recurring-title">
-                    <span>Partner Virtual Team (PVT)</span>
-                    <span class="badge badge-tech" title="Profil technique">⚙️ Hebdo/Mensuel</span>
-                </div>
-                <p class="recurring-desc">Sessions techniques régulières dédiées aux avant-ventes et architectes partenaires EMEA.</p>
-                <a href="http://cs.co/EMEAPartnerEnablement-PVT" target="_blank" rel="noopener noreferrer" class="action-link">
+</div>
+</div>
+<!-- Event 3 -->
+<div class="event-card executive tech" data-cat="executive tech">
+<div class="event-top">
+<div class="event-name">Partner Defence Advisory Board</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+</div>
+</div>
+<div class="event-details">13 - 14 Octobre 2026</div>
+<div class="event-location">📍 Cisco France, Paris</div>
+</div>
+<!-- Event 4 -->
+<div class="event-card executive featured commercial" data-cat="executive flagship commercial">
+<div class="event-top">
+<div class="event-name">Cisco Partner Summit</div>
+<div class="event-badges">
+<span class="badge badge-star" title="Événements phares">⭐</span>
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">26 - 28 Octobre 2026</div>
+<div class="event-location">📍 Vancouver, Canada</div>
+</div>
+</div>
+</div>
+<!-- Q2 FY27 -->
+<div class="quarter-column" data-quarter="Q2">
+<div class="quarter-header">
+<span class="quarter-title">Q2 FY27</span>
+<span class="quarter-dates">Nov. 2026 - Jan. 2027</span>
+</div>
+<div class="events-list">
+<!-- Parcours adoption & cycle de vie du cas d'usage -->
+<div class="event-card executive" data-cat="executive">
+<div class="event-top">
+<div class="event-name">Parcours adoption &amp; cycle de vie du cas d'usage</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+</div>
+</div>
+<div class="event-details">19 Novembre 2026</div>
+<div class="event-location">📍 Sur invitation • Paris &amp; Hybride</div>
+</div>
+<!-- Agentic AI Network with Cisco Workshop in Paris -->
+<div class="event-card executive tech" data-cat="executive tech">
+<div class="event-top">
+<div class="event-name">Agentic AI Network with Cisco Workshop in Paris</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+</div>
+</div>
+<div class="event-details">25 - 26 Novembre 2026</div>
+<div class="event-location">📍 Cisco France, Paris</div>
+</div>
+<!-- Masters de l'hiver -->
+<div class="event-card masters tech" data-cat="tech masters">
+<div class="event-top">
+<div class="event-name">Les Masters de l’Hiver (Technical Series)</div>
+<div class="event-badges">
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+</div>
+</div>
+<div class="event-details">Paris &amp; Régions</div>
+<div class="subtracks-box"><div class="subtrack-item"><span class="subtrack-name">☁️ Cloud &amp; AI</span><span class="subtrack-date">26/11/2026</span></div><div class="subtrack-item"><span class="subtrack-name">🔒 Cyber security</span><span class="subtrack-date">10/12/2026</span></div><div class="subtrack-item"><span class="subtrack-name">🌐 Secure Networking</span><span class="subtrack-date">15/12/2026</span></div><div class="subtrack-item"><span class="subtrack-name">💬 Collaboration</span><span class="subtrack-date">13/01/2027</span></div></div>
+</div>
+<!-- Managed Services -->
+<div class="event-card" data-cat="partner-day">
+<div class="event-top">
+<div class="event-name">Managed Services Partner Day</div>
+<div class="event-badges"></div>
+</div>
+<div class="event-details">9 Décembre 2026</div>
+<div class="event-location">📍 Cisco France, Paris</div>
+<div style="margin-top: 8px;">
+<a class="action-link" href="https://xpert.cisco.com/register/7OV9Y9TBHRDBR6RU" rel="noopener noreferrer" style="display: inline-flex; width: 100%; justify-content: center; box-sizing: border-box; background: rgba(0, 188, 235, 0.15); border-color: rgba(0, 188, 235, 0.4); color: #00BCEB;" target="_blank">
+✍️ S'inscrire à l'événement
+</a>
+</div>
+</div>
+<!-- Coffee Roadshow -->
+<div class="event-card commercial" data-cat="commercial">
+<div class="event-top">
+<div class="event-name">"Coffee, Collab &amp; Customer Outcomes"</div>
+<div class="event-badges">
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">16 Décembre 2026</div>
+<div class="event-location">📍 Cisco France, Paris</div>
+</div>
+<!-- Grand Angle -->
+<div class="event-card featured commercial" data-cat="flagship commercial">
+<div class="event-top">
+<div class="event-name">Cisco Grand Angle</div>
+<div class="event-badges">
+<span class="badge badge-star" title="Événements phares">⭐</span>
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">19 Janvier 2027</div>
+<div class="event-location">📍 Cisco France, Paris</div>
+</div>
+</div>
+</div>
+<!-- Q3 FY27 -->
+<div class="quarter-column" data-quarter="Q3">
+<div class="quarter-header">
+<span class="quarter-title">Q3 FY27</span>
+<span class="quarter-dates">Fév. - Avril 2027</span>
+</div>
+<div class="events-list">
+<!-- CFO Day -->
+<div class="event-card executive commercial" data-cat="executive commercial">
+<div class="event-top">
+<div class="event-name">CFO DAY</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">Date : TBC</div>
+<div class="event-location">📍 Lieu à confirmer</div>
+</div>
+<!-- Cisco Live EMEA -->
+<div class="event-card featured tech commercial" data-cat="flagship tech commercial">
+<div class="event-top">
+<div class="event-name">Cisco Live EMEA</div>
+<div class="event-badges">
+<span class="badge badge-star" title="Événements phares">⭐</span>
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">8 - 12 Février 2027</div>
+<div class="event-location">📍 Londres, Royaume-Uni</div>
+</div>
+<!-- Masters Printemps -->
+<div class="event-card masters tech" data-cat="tech masters">
+<div class="event-top">
+<div class="event-name">Les Masters du Printemps (Technical Series)</div>
+<div class="event-badges">
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+</div>
+</div>
+<div class="event-details">Sessions Techniques Approfondies</div>
+<div class="subtracks-box">
+<div class="subtrack-item"><span class="subtrack-name">☁️ Cloud &amp; AI</span><span class="subtrack-date">TBD</span></div>
+<div class="subtrack-item"><span class="subtrack-name">💬 Collaboration</span><span class="subtrack-date">TBD</span></div>
+<div class="subtrack-item"><span class="subtrack-name">🌐 Secure Networking</span><span class="subtrack-date">TBD</span></div>
+<div class="subtrack-item"><span class="subtrack-name">🔒 Cyber security</span><span class="subtrack-date">TBD</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Q4 FY27 -->
+<div class="quarter-column" data-quarter="Q4">
+<div class="quarter-header">
+<span class="quarter-title">Q4 FY27</span>
+<span class="quarter-dates">Mai - Juillet 2027</span>
+</div>
+<div class="events-list">
+<!-- Cisco Connect FR -->
+<div class="event-card executive featured" data-cat="executive flagship tech commercial">
+<div class="event-top">
+<div class="event-name">Cisco Connect France</div>
+<div class="event-badges">
+<span class="badge badge-star" title="Événements phares">⭐</span>
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+</div>
+</div>
+<div class="event-details">Date : TBC</div>
+<div class="event-location">📍 Paris</div>
+</div>
+<!-- HR Day -->
+<div class="event-card" data-cat="general">
+<div class="event-top">
+<div class="event-name">HR Day</div>
+</div>
+<div class="event-details">Date : TBD</div>
+<div class="event-location">📍 Cisco Paris</div>
+</div>
+<!-- Cisco Live USA -->
+<div class="event-card featured commercial tech" data-cat="flagship commercial tech">
+<div class="event-top">
+<div class="event-name">Cisco Live USA</div>
+<div class="event-badges">
+<span class="badge badge-star" title="Événements phares">⭐</span>
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">31 Mai – 4 Juin 2027</div>
+<div class="event-location">📍 Las Vegas, USA</div>
+</div>
+<!-- Marketing Exchange -->
+<div class="event-card commercial" data-cat="marketing commercial">
+<div class="event-top">
+<div class="event-name">EMEA Partner Marketing Exchange</div>
+<div class="event-badges">
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">9 - 10 Juin 2027</div>
+<div class="event-location">📍 Madrid, Espagne</div>
+</div>
+<!-- POAB -->
+<div class="event-card executive" data-cat="executive">
+<div class="event-top">
+<div class="event-name">Partner Operation Advisory Board (POAB)</div>
+<div class="event-badges">
+<span class="badge badge-invitation" title="Sur invitation">*</span>
+</div>
+</div>
+<div class="event-details">Date : TBD</div>
+<div class="event-location">📍 TBD</div>
+</div>
+<!-- One Cisco Sales Academy -->
+<div class="event-card commercial" data-cat="commercial">
+<div class="event-top">
+<div class="event-name">One Cisco Sales Academy</div>
+<div class="event-badges">
+<span class="badge badge-commercial" title="Profil commercial">$</span>
+</div>
+</div>
+<div class="event-details">Date : TBD</div>
+<div class="event-location">📍 TBD</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recurring Sessions & Enablement Hub -->
+<div class="recurring-section">
+<div class="recurring-header">
+<h2>🔄 Rendez-vous Récurrents &amp; Plateformes d'Enablement Partenaires</h2>
+</div>
+<div class="recurring-grid">
+<div class="recurring-card">
+<div class="recurring-title">
+<span>Partner Virtual Team (PVT)</span>
+<span class="badge badge-tech" title="Profil technique">⚙️ Hebdo/Mensuel</span>
+</div>
+<p class="recurring-desc">Sessions techniques régulières dédiées aux avant-ventes et architectes partenaires EMEA.</p>
+<a class="action-link" href="http://cs.co/EMEAPartnerEnablement-PVT" rel="noopener noreferrer" target="_blank">
                     🔗 cs.co/EMEAPartnerEnablement-PVT
                 </a>
-            </div>
-
-            <div class="recurring-card">
-                <div class="recurring-title">
-                    <span>EMEA Partner Interactive Webinars</span>
-                    <span class="badge badge-commercial" title="Profil commercial">$ Business</span>
-                </div>
-                <p class="recurring-desc">Webinaires interactifs réguliers sur les programmes, incentives et lancements produits EMEA.</p>
-                <a href="https://salesresources.cisco.com/apps/doccenter/9d78200e-349d-4c9f-9d82-74cca52a2a22/doc/%252Fdd2436f1d5-b741-682f-efec-ec6f49062bdd%252FdfM2Y2MGY5YjEtOWQ2OS00MGNkLTg4ZTAtNmE2ODMzOGMzNWZl%252CPT0%253D%252CUGFydG5lciBQcm9ncmFtcyBhbmQgRGV2ZWxvcG1lbnQ%253D%252Flf2fd81601-4b0a-49a3-b4b6-4429326445ca/grid/" target="_blank" rel="noopener noreferrer" class="action-link">
+</div>
+<div class="recurring-card">
+<div class="recurring-title">
+<span>EMEA Partner Interactive Webinars</span>
+<span class="badge badge-commercial" title="Profil commercial">$ Business</span>
+</div>
+<p class="recurring-desc">Webinaires interactifs réguliers sur les programmes, incentives et lancements produits EMEA.</p>
+<a class="action-link" href="https://salesresources.cisco.com/apps/doccenter/9d78200e-349d-4c9f-9d82-74cca52a2a22/doc/%252Fdd2436f1d5-b741-682f-efec-ec6f49062bdd%252FdfM2Y2MGY5YjEtOWQ2OS00MGNkLTg4ZTAtNmE2ODMzOGMzNWZl%252CPT0%253D%252CUGFydG5lciBQcm9ncmFtcyBhbmQgRGV2ZWxvcG1lbnQ%253D%252Flf2fd81601-4b0a-49a3-b4b6-4429326445ca/grid/" rel="noopener noreferrer" target="_blank">
                     📄 Accéder au DocCenter EMEA
                 </a>
-            </div>
-
-            <div class="recurring-card">
-                <div class="recurring-title">
-                    <span>Partner Technical Webinar France</span>
-                    <span class="badge badge-tech" title="Profil technique">⚙️</span>
-                </div>
-                <p class="recurring-desc">Rendez-vous bimensuel animé par les équipes Systems Engineering (SE) de Cisco France pour les profils techniques partenaires.</p>
-                <a href="https://xpert.cisco.com/register/TC-013360?reqId=SS-029511" target="_blank" rel="noopener noreferrer" class="action-link">
+</div>
+<div class="recurring-card">
+<div class="recurring-title">
+<span>Partner Technical Webinar France</span>
+<span class="badge badge-tech" title="Profil technique">⚙️</span>
+</div>
+<p class="recurring-desc">Rendez-vous bimensuel animé par les équipes Systems Engineering (SE) de Cisco France pour les profils techniques partenaires.</p>
+<a class="action-link" href="https://xpert.cisco.com/register/TC-013360?reqId=SS-029511" rel="noopener noreferrer" target="_blank">
                     📝 Lien d'Inscription Xpert
                 </a>
-            </div>
-
-            <div class="recurring-card">
-                <div class="recurring-title">
-                    <span>Partner Success Training & Top of Mind</span>
-                    <span class="badge badge-commercial" title="Profil commercial">$ Success</span>
-                </div>
-                <p class="recurring-desc">Formations sur la pratique Customer Success, adoption logicielle et Quarterly Top of Mind.</p>
-                <a href="https://salesresources.cisco.com/apps/doccenter/9d78200e-349d-4c9f-9d82-74cca52a2a22/doc/%252Fdd2436f1d5-b741-682f-efec-ec6f49062bdd%252FdfM2Y2MGY5YjEtOWQ2OS00MGNkLTg4ZTAtNmE2ODMzOGMzNWZl%252CPT0%253D%252CUGFydG5lciBQcm9ncmFtcyBhbmQgRGV2ZWxvcG1lbnQ%253D%252Flf366d863b-a080-4ad1-b9f0-5626a82a87e0/grid/?anchorId=44e7e804-c235-47ab-9df5-bb521a98667e" target="_blank" rel="noopener noreferrer" class="action-link">
+</div>
+<div class="recurring-card">
+<div class="recurring-title">
+<span>Partner Success Training &amp; Top of Mind</span>
+<span class="badge badge-commercial" title="Profil commercial">$ Success</span>
+</div>
+<p class="recurring-desc">Formations sur la pratique Customer Success, adoption logicielle et Quarterly Top of Mind.</p>
+<a class="action-link" href="https://salesresources.cisco.com/apps/doccenter/9d78200e-349d-4c9f-9d82-74cca52a2a22/doc/%252Fdd2436f1d5-b741-682f-efec-ec6f49062bdd%252FdfM2Y2MGY5YjEtOWQ2OS00MGNkLTg4ZTAtNmE2ODMzOGMzNWZl%252CPT0%253D%252CUGFydG5lciBQcm9ncmFtcyBhbmQgRGV2ZWxvcG1lbnQ%253D%252Flf366d863b-a080-4ad1-b9f0-5626a82a87e0/grid/?anchorId=44e7e804-c235-47ab-9df5-bb521a98667e" rel="noopener noreferrer" target="_blank">
                     🎓 Accéder aux modules Success
                 </a>
-            </div>
-
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+<div>
+<strong>Cisco Partner Organization France</strong> • Calendrier Annuel Enablement FY27
         </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div>
-            <strong>Cisco Partner Organization France</strong> • Calendrier Annuel Enablement FY27
-        </div>
-        <div>
+<div>
             Document généré pour : <strong>Isabelle Jarry</strong> (Partner Account Executive)
         </div>
-    </footer>
+</footer>
 </div>
-
 <script>
     function filterEvents(category, btnElement) {
         const buttons = document.querySelectorAll('.filter-btn');
@@ -1031,6 +991,5 @@
     }
     document.addEventListener('DOMContentLoaded', () => filterEvents('all'));
 </script>
-
 </body>
 </html>
