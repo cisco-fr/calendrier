@@ -559,6 +559,59 @@
             flex-wrap: wrap;
             gap: 12px;
         }
+    
+        .subtracks-box {
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.12);
+        }
+        .subtrack-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--cisco-text-main);
+            padding: 5px 0;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.06);
+        }
+        .subtrack-item:last-child {
+            border-bottom: none;
+        }
+        .subtrack-name {
+            color: #cbd5e1;
+            font-weight: 500;
+        }
+        .subtrack-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .subtrack-date {
+            color: var(--cisco-sky);
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+        .subtrack-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            background: rgba(0, 188, 235, 0.15);
+            border: 1px solid rgba(0, 188, 235, 0.35);
+            color: var(--cisco-sky);
+            text-decoration: none;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .subtrack-link:hover {
+            background: var(--cisco-sky);
+            color: #07111e;
+            box-shadow: 0 2px 6px rgba(0, 188, 235, 0.4);
+        }
+
     </style>
 </head>
 <body>
@@ -732,7 +785,36 @@
 </div>
 </div>
 <div class="event-details">Paris &amp; Régions</div>
-<div class="subtracks-box"><div class="subtrack-item"><span class="subtrack-name">☁️ Cloud &amp; AI</span><span class="subtrack-date">26/11/2026</span></div><div class="subtrack-item"><span class="subtrack-name">🔒 Cyber security</span><span class="subtrack-date">10/12/2026</span></div><div class="subtrack-item"><span class="subtrack-name">🌐 Secure Networking</span><span class="subtrack-date">15/12/2026</span></div><div class="subtrack-item"><span class="subtrack-name">💬 Collaboration</span><span class="subtrack-date">13/01/2027</span></div></div>
+<div class="subtracks-box">
+          <div class="subtrack-item">
+            <span class="subtrack-name">☁️ Cloud &amp; AI</span>
+            <div class="subtrack-right">
+              <span class="subtrack-date">26/11/2026</span>
+              <a href="https://xpert.cisco.com/register/TC-014325" target="_blank" class="subtrack-link" title="S'inscrire au Master Cloud &amp; AI">✍️ S'inscrire</a>
+            </div>
+          </div>
+          <div class="subtrack-item">
+            <span class="subtrack-name">🔒 Cyber security</span>
+            <div class="subtrack-right">
+              <span class="subtrack-date">10/12/2026</span>
+              <a href="https://xpert.cisco.com/register/TC-014390" target="_blank" class="subtrack-link" title="S'inscrire au Master Cybersécurité">✍️ S'inscrire</a>
+            </div>
+          </div>
+          <div class="subtrack-item">
+            <span class="subtrack-name">🌐 Secure Networking</span>
+            <div class="subtrack-right">
+              <span class="subtrack-date">15/12/2026</span>
+              <a href="https://xpert.cisco.com/register/TC-014391" target="_blank" class="subtrack-link" title="S'inscrire au Master Secure Networking">✍️ S'inscrire</a>
+            </div>
+          </div>
+          <div class="subtrack-item">
+            <span class="subtrack-name">💬 Collaboration</span>
+            <div class="subtrack-right">
+              <span class="subtrack-date">13/01/2027</span>
+              <a href="https://xpert.cisco.com/register/VTOZ6192DYZM5BQ1" target="_blank" class="subtrack-link" title="S'inscrire au Master Collaboration">✍️ S'inscrire</a>
+            </div>
+          </div>
+        </div>
 </div>
 <!-- Managed Services -->
 <div class="event-card" data-cat="partner-day">
@@ -840,16 +922,16 @@
 <span class="badge badge-tech" title="Profil technique">⚙️</span>
 </div>
 </div>
-<div class="event-details">Date : TBC</div>
-<div class="event-location">📍 Paris</div>
+<div class="event-details">20 Mai 2027</div>
+<div class="event-location">📍 Palais Brongniart, Paris</div>
 </div>
-<!-- HR Day -->
-<div class="event-card" data-cat="general">
+<!-- One Cisco - Partner Enablement Day -->
+<div class="event-card" data-cat="enablement commercial tech">
 <div class="event-top">
-<div class="event-name">HR Day</div>
+<div class="event-name">One Cisco - Partner Enablement Day</div>
 </div>
-<div class="event-details">Date : TBD</div>
-<div class="event-location">📍 Cisco Paris</div>
+<div class="event-details">18 Mai 2027</div>
+<div class="event-location">📍 Paris</div>
 </div>
 <!-- Cisco Live USA -->
 <div class="event-card featured commercial tech" data-cat="flagship commercial tech">
